@@ -51,7 +51,7 @@
   </tr>
 </table>
 
-<p>If you are a Windows user and can not use FTP/rsync, create a .txt file with the folder name in it and use the Paituli PowerShell script to download the folder. </p>
+<p>If you want to download a folder, but have Windows and can not use FTP/rsync, then there is not suitable tools to download a folder. As workaround, create a .txt file with the folder name in it and use the Paituli PowerShell script to download the folder. </p>
 	
 <h2>Download a list of files</h2>
 <p>
@@ -75,7 +75,7 @@
 <p>Alternatively you can make a custom file using the paths given in index map, which is available for each dataset in <a href="download.html">Download data</a> page Links tab.</p>
 
 <h3>Downloading the files with a list of files.</h3>
-<p>Unfortunately the graphical tools do not support downloading with a list of files, but is possible with command-line tools. </p>
+<p>Unfortunately the graphical tools do not support downloading with a list of files, but is possible with command-line tools. For Windows users we provide custom PowerShell script. Linux and Mac users can download with <a href="http://www.linuxguide.it/command_line/linux-manpage/do.php?file=wget" target="_blank">wget</a> or <a href="http://www.linuxguide.it/command_line/linux-manpage/do.php?file=rsync" target="_blank">rsync </a>, which should be always available by default.</p>
 
 <h4>Paituli PowerShell script for Windows</h4>
 
@@ -166,7 +166,7 @@ Different tools can be used for downloading a folder. The listed options here do
 <h4>wget</h4>
 
 <p>
-In some places FTP and rsync are forbidden at firewall level, then you can use wget with HTTPS with wget. wget has a lot of different options, one well working combination is this: 
+In some places FTP and rsync are forbidden at firewall level, then you can use HTTPS with wget. wget has a lot of different options, one well working combination is this: 
 </p>
 
 <div class="codeBlock">wget -r -l inf -N -np -nH -x -c --cut-dirs=6 ftp://ftp.funet.fi/pub/sci/geo/geodata/<b style="color: blue;">mml/hallintorajat_milj_tk/2017/ -P local_folder_to_save/</b></div>
@@ -191,4 +191,4 @@ In some places FTP and rsync are forbidden at firewall level, then you can use w
     </li>
 </ul>
 
-<p>If you notice any problems, please inform giscoord@csc.fi</p>
+<p>If you notice any problems or know a better way for downloading from Windows, please inform giscoord@csc.fi</p>
