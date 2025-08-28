@@ -166,7 +166,7 @@ Different tools can be used for downloading a folder. The listed options here do
 <h4>wget</h4>
 
 <p>
-In some places FTP and rsync are forbidden at firewall level, then you can use wget with HTTPS with wget. wget has a lot of different options, one well working combination is this: 
+In some places FTP and rsync are forbidden at firewall level, then you can use HTTPS with wget. wget has a lot of different options, one well working combination is this: 
 </p>
 
 <div class="codeBlock">wget -r -l inf -N -np -nH -x -c --cut-dirs=6 ftp://ftp.funet.fi/pub/sci/geo/geodata/<b style="color: blue;">mml/hallintorajat_milj_tk/2017/ -P local_folder_to_save/</b></div>
